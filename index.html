@@ -2,61 +2,160 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Your Academic Website</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Saiqin</title>
+  <style>
+    /* CSS styles go here */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+    
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      background-color: #e5e5e5;
+    }
+    
+    main {
+      padding: 20px;
+      text-align: left;
+    }
+    ul.num {
+      list-style: none;
+      list-style-type: none;
+      counter-reset:sectioncounter;
+    }
+    ul.num li:before {
+       content:counter(sectioncounter) "、"; 
+       counter-increment:sectioncounter;
+       position: relative;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      line-height: 1.6;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Academic Website</p>
+    <h1>Saiqin Xu(徐赛琴)</h1>
+    <p>Xidian University</p>
   </header>
   
-  <div class="sidebar">
+  <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Publications</a></li>
-      <li><a href="#">Teaching</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#me">Home</a></li>
+      <li><a href="#papers">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
+  </nav>
   
-  <div class="content">
-    <h2>Welcome to My Academic Website</h2>
+  <main>
+    <h2 id="me">About me</h2>
     <p>
-      This is a placeholder text. Replace it with your own content.
+      Saiqin Xu received the B.S. degree in the Computer Science and Technology, Anhui Normal University, China, in 2019. 
+      She is currently working toward the Ph.D. degree with National Laboratory of Radar Signal Processing, Xidian University, Xi’an, China. 
+      Since October 2022, she has been a Visiting Student with SPRITZ Security and Privacy Research Group, Department of Mathematics, University of Padova, Italy, with the support of China Scholarship Council. 
+      Her research interests include signal processing, parameter estimation, radar systems engineering, artificial neural networks and security and privacy for wireless vehicular communications.
     </p>
+
     
-    <section class="publications">
+    <section id="papers">
       <h2>Publications</h2>
-      
-      <div class="publication-item">
-        <div>
-          <h3 class="publication-title">Publication Title 1</h3>
-          <p class="publication-details">Authors, Journal/Conference Name, Year</p>
-        </div>
-      </div>
-      
-      <div class="publication-item">
-        <div>
-          <h3 class="publication-title">Publication Title 2</h3>
-          <p class="publication-details">Authors, Journal/Conference Name, Year</p>
-        </div>
-      </div>
-      
-      <div class="publication-item">
-        <div>
-          <h3 class="publication-title">Publication Title 3</h3>
-          <p class="publication-details">Authors, Journal/Conference Name, Year</p>
-        </div>
-      </div>
-      
+      <h3>Journal Papers</h3>
+      <ul class="num" reversed>
+        <li>Deep Neural Networks for Direction of Arrival Estimation of Multiple Targets with Sparse Prior for Line-of-Sight Scenarios. S Xu, A Brighente, B Chen, M Conti, X Cheng, D Zhu,
+          <br><b>IEEE Transactions on Vehicular Technology</b>, 2022</li>
+        <li>A low computational complexity DOA estimation using sum/difference pattern based on DNN. S Xu, B Chen, H Xiang, 
+          <br><b>Multidimensional Systems and Signal Processing</b>, 2022</li>
+        <li>Direction‐of‐arrival estimation using estimator banks in low‐angle tracking for S‐band radar. S Xu, B Chen, H Xiang, 
+          <br><b>Microwave and Optical Technology Letters</b>, 2021</li>
+        <li>Improved direction-of-arrival estimation method based on LSTM neural networks with robustness to array imperfections. H Xiang, B Chen, M Yang, S Xu, Z Li,
+          <br>Applied Intelligence, 2021</li>
+        <li>Angle separation learning for coherent DOA estimation with deep sparse prior. H Xiang, B Chen, M Yang, S Xu, 
+          <br>IEEE Communications Letters, 2020</li>
+      </ul>
+      <h3>Conference Papers</h3>
+      <ul class="num">
+        <li>Deep Learning Based Direction of Arrival Estimation of Multiple Targets - S Xu, B Chen, H Lian, Z Guo,
+          2022 IEEE 5th International Conference on Electronic Information and Communication Technology (ICEICT), 2022</li>
+        <li>A Beamspace Dimension Reduction Technique With Application to DOA estimation in Low-angle Tracking - S Xu, B Chen, X Chen, H Xiang, 
+          2021 CIE International Conference on Radar (Radar), 2023</li>
+      </ul>
     </section>
     
-    <section class="contact">
-      <h2>Contact</h2>
-      <p class="contact-info">Contact information goes here</p>
+    
+    
+    
+    
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>
+        If you have any inquiries or would like to collaborate, feel free to reach out to me using the contact information below:
+      </p>
+      
+      <ul>
+        <li>Email: xusaiqin@stu.xidian.edu.cn;xusaiqin@163.com</li>
+        <li><a href="https://scholar.google.com/citations?user=Oz1xHTIAAAAJ&hl=zh-CN&oi=ao">google scholar</a></li>
+      </ul>
     </section>
-  </div>
+  </main>
+  
+  <footer>
+    &copy; 2023 Your Name
+  </footer>
 </body>
 </html>

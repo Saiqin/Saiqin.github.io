@@ -1,107 +1,46 @@
-<style>
-    /* CSS styles go here */
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
-    }
+<main>
+    <h2>Welcome to My Academic Website</h2>
+    <p>
+      Welcome to my academic website. I am a researcher and educator passionate about [your field of expertise]. On this website, you will find information about my research, publications, teaching, and ways to get in touch with me.
+    </p>
     
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 40px;
-      text-align: center;
-    }
+    <section>
+      <h3>Research</h3>
+      <p>
+        In my research, I focus on [brief description of your research interests]. I investigate [topics/research questions] using [methods/approaches]. My goal is to contribute to the field and advance knowledge in [your field].
+      </p>
+    </section>
     
-    h1 {
-      margin: 0;
-      font-size: 36px;
-      letter-spacing: 2px;
-    }
+    <section>
+      <h3>Publications</h3>
+      <p>
+        Here are some of my notable publications:
+      </p>
+      
+      <ul>
+        <li>Publication Title 1 - Authors, Journal/Conference Name, Year</li>
+        <li>Publication Title 2 - Authors, Journal/Conference Name, Year</li>
+        <li>Publication Title 3 - Authors, Journal/Conference Name, Year</li>
+      </ul>
+    </section>
     
-    .sidebar {
-      background-color: #f4f4f4;
-      padding: 20px;
-      position: fixed;
-      top: 200px;
-      left: 0;
-      bottom: 0;
-    }
+    <section>
+      <h3>Teaching</h3>
+      <p>
+        As an educator, I am committed to fostering a love for [subject] among my students. I teach courses such as [course names] where I aim to provide a comprehensive understanding of the subject matter and promote critical thinking.
+      </p>
+    </section>
     
-    .sidebar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .sidebar ul li {
-      margin-bottom: 10px;
-    }
-    
-    .sidebar ul li a {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 3px;
-      transition: background-color 0.3s ease;
-    }
-    
-    .sidebar ul li a:hover {
-      background-color: #333;
-      color: #fff;
-    }
-    
-    .content {
-      margin-left: 200px; /* Adjust the value as needed */
-      padding: 40px;
-    }
-    
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      line-height: 1.6;
-    }
-    
-    .publications {
-      margin-top: 40px;
-    }
-    
-    .publication-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    
-    .publication-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0;
-    }
-    
-    .publication-details {
-      font-size: 14px;
-      color: #777;
-      margin: 0;
-      margin-left: 10px;
-    }
-    
-    .contact {
-      margin-top: 40px;
-    }
-    
-    .contact-info {
-      font-size: 16px;
-    }
-  </style>
+    <section>
+      <h3>Contact</h3>
+      <p>
+        If you have any inquiries or would like to collaborate, feel free to reach out to me using the contact information below:
+      </p>
+      
+      <ul>
+        <li>Email: [email address]</li>
+        <li>Phone: [phone number]</li>
+        <li>Office: [office location]</li>
+      </ul>
+    </section>
+  </main>
